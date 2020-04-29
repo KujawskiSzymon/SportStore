@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace SportStoreTests
+namespace SportStore.UnitTests
 {
     public class UnitTest1
     {

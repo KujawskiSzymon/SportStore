@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SportStore.Models
+namespace SportStore.WebUI.Infrastructure
 {
-   public  interface IProductRepository
+    public class NinjectDependencyResolver
     {
-        IQueryable<Product> Products { get; }
     }
 }

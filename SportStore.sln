@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-VisualStudioVersion = 16.0.29411.108
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportStore", "SportStore\SportStore.csproj", "{F4CF154D-128C-4C63-A806-BBE09AC6D9B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportStore.Domain", "SportStore.Domain\SportStore.Domain.csproj", "{D70A8E08-9569-47E5-8D1C-48E0AE504A77}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SportStoreTests", "SportStoreTests\SportStoreTests.csproj", "{41EE4D73-58DD-4228-A24A-01C5CD920D72}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportStore.WebUI", "SportStore.WebUI\SportStore.WebUI.csproj", "{0F7B52C0-068A-410B-BA34-51D95B83A44A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D70A8E08-9569-47E5-8D1C-48E0AE504A77} = {D70A8E08-9569-47E5-8D1C-48E0AE504A77}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SportStore.UnitTests", "SportStore.UnitTests\SportStore.UnitTests.csproj", "{B43C5850-8B10-4909-AD6A-F8CDFD547A12}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0F7B52C0-068A-410B-BA34-51D95B83A44A} = {0F7B52C0-068A-410B-BA34-51D95B83A44A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,19 +21,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F4CF154D-128C-4C63-A806-BBE09AC6D9B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4CF154D-128C-4C63-A806-BBE09AC6D9B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4CF154D-128C-4C63-A806-BBE09AC6D9B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4CF154D-128C-4C63-A806-BBE09AC6D9B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{41EE4D73-58DD-4228-A24A-01C5CD920D72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41EE4D73-58DD-4228-A24A-01C5CD920D72}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41EE4D73-58DD-4228-A24A-01C5CD920D72}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41EE4D73-58DD-4228-A24A-01C5CD920D72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D70A8E08-9569-47E5-8D1C-48E0AE504A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D70A8E08-9569-47E5-8D1C-48E0AE504A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D70A8E08-9569-47E5-8D1C-48E0AE504A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D70A8E08-9569-47E5-8D1C-48E0AE504A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F7B52C0-068A-410B-BA34-51D95B83A44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F7B52C0-068A-410B-BA34-51D95B83A44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F7B52C0-068A-410B-BA34-51D95B83A44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F7B52C0-068A-410B-BA34-51D95B83A44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B43C5850-8B10-4909-AD6A-F8CDFD547A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B43C5850-8B10-4909-AD6A-F8CDFD547A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B43C5850-8B10-4909-AD6A-F8CDFD547A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B43C5850-8B10-4909-AD6A-F8CDFD547A12}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5EC2754D-4B3F-42AB-9B1D-7DA4F3B8EE42}
+		SolutionGuid = {FC72CE96-95AF-4EEB-B9BF-CBA369086CA5}
 	EndGlobalSection
 EndGlobal
